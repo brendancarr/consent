@@ -1,0 +1,64 @@
+.cookie-prompt {
+  position: fixed;
+  bottom: 2.5%;
+  right: 2.5%;
+  z-index: 9999;
+  width: 95%;
+  max-width: 400px;
+  background-color: #dcd1be;
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+  padding: 40px;
+  border-radius: 40px;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  -o-transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-transform: translateY(20px);
+  -ms-transform: translateY(20px);
+  transform: translateY(20px); }
+  .cookie-prompt.active {
+    opacity: 1;
+    visibility: visible;
+    -webkit-transition: opacity 0.5s cubic-bezier(0.4, 0, 0.2, 1) 2s, visibility 0s linear 0s, -webkit-transform 0.5s cubic-bezier(0.4, 0, 0.2, 1) 2s;
+    transition: opacity 0.5s cubic-bezier(0.4, 0, 0.2, 1) 2s, visibility 0s linear 0s, -webkit-transform 0.5s cubic-bezier(0.4, 0, 0.2, 1) 2s;
+    -o-transition: opacity 0.5s cubic-bezier(0.4, 0, 0.2, 1) 2s, transform 0.5s cubic-bezier(0.4, 0, 0.2, 1) 2s, visibility 0s linear 0s;
+    transition: opacity 0.5s cubic-bezier(0.4, 0, 0.2, 1) 2s, transform 0.5s cubic-bezier(0.4, 0, 0.2, 1) 2s, visibility 0s linear 0s;
+    transition: opacity 0.5s cubic-bezier(0.4, 0, 0.2, 1) 2s, transform 0.5s cubic-bezier(0.4, 0, 0.2, 1) 2s, visibility 0s linear 0s, -webkit-transform 0.5s cubic-bezier(0.4, 0, 0.2, 1) 2s;
+    -webkit-transform: translateY(0px);
+    -ms-transform: translateY(0px);
+    transform: translateY(0px); }
+  .cookie-prompt p {
+    color: black; }
+  .cookie-prompt .button-group {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between; }
+  .cookie-prompt button {
+    background-color: transparent;
+    color: #000000;
+    width: calc(50% - 5px);
+    outline: 0;
+    margin: 0;
+    padding: 10px 20px;
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+    -webkit-transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+    -o-transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+    transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+    border: 1px solid #000000; }
+    .cookie-prompt button:hover, .cookie-prompt button:focus {
+      background-color: #F4F0EC;
+      color: #1F2D30;
+      -webkit-transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+      -o-transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+      transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+      -webkit-transform: scale(1.05);
+      -ms-transform: scale(1.05);
+      transform: scale(1.05); }
